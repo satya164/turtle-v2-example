@@ -1,0 +1,9 @@
+yarn.lock -diff linguist-generated=true
+
+*.pbxproj -text
+
+turtle.json filter=git-crypt diff=git-crypt export-ignore
+android/keystores/release.keystore filter=git-crypt diff=git-crypt export-ignore
+android/keystores/release.keystore.properties filter=git-crypt diff=git-crypt export-ignore
+ios/certs/* filter=git-crypt diff=git-crypt export-ignore
+
