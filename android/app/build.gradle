@@ -94,8 +94,6 @@ def enableSeparateBuildPerCPUArchitecture = false
  */
 def enableProguardInReleaseBuilds = false
 
-def releaseKeystore = new Properties()
-releaseKeystore.load(new FileInputStream(rootProject.file("keystores/release.keystore.properties")))
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -118,10 +116,15 @@ android {
     }
     signingConfigs {
         release {
-            storeFile rootProject.file("keystores/release.keystore")
-            storePassword releaseKeystore["key.store.password"]
-            keyAlias releaseKeystore["key.alias"]
-            keyPassword releaseKeystore["key.alias.password"]
+            try {
+                def credentialsJson = new groovy.json.JsonSlurper().parse(rootProject.file("../credentials.json"))
+                storeFile rootProject.file("../" + credentialsJson["android"]["keystore"]["keystorePath"])
+                storePassword credentialsJson["android"]["keystore"]["keystorePassword"]
+                keyAlias credentialsJson["android"]["keystore"]["keyAlias"]
+                keyPassword credentialsJson["android"]["keystore"]["keyPassword"]
+            } catch (Exception e) {
+                println("Release credentials not found, building with debug keystore");
+            }
         }
     }
     buildTypes {
