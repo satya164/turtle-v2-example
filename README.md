@@ -13,5 +13,5 @@ gcloud auth login
 Then run:
 
 ```sh
-./scripts/unlock
+./scripts/unlock.sh
 ```

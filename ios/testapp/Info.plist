@@ -37,30 +37,10 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>NSCalendarsUsageDescription</key>
-	<string>Allow testapp to access your calendar</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Allow testapp to use the camera</string>
-	<key>NSContactsUsageDescription</key>
-	<string>Allow testapp experiences to access your contacts</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Allow testapp to use your location</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Allow testapp to use your location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Allow testapp to use your location</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Allow testapp to access your microphone</string>
-	<key>NSMotionUsageDescription</key>
-	<string>Allow testapp to access your device's accelerometer</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Give testapp periences permission to save photos</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Give testapp periences permission to access your photos</string>
-	<key>NSRemindersUsageDescription</key>
-	<string>Allow testapp to access your reminders</string>
+	<string></string>
 	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
+	<string>SplashScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -73,5 +53,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+  <key>UIStatusBarStyle</key>
+  <string>UIStatusBarStyleDefault</string>
 </dict>
 </plist>
