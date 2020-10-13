@@ -317,7 +317,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.testapp.turtlev2;
 				PRODUCT_NAME = testapp;
-				PROVISIONING_PROFILE_SPECIFIER = "org.reactjs.native.example.testapp.turtlev2";
+				PROVISIONING_PROFILE_SPECIFIER = "Turtle Example";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -345,7 +345,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.testapp.turtlev2;
 				PRODUCT_NAME = testapp;
-				PROVISIONING_PROFILE_SPECIFIER = "org.reactjs.native.example.testapp.turtlev2";
+				PROVISIONING_PROFILE_SPECIFIER = "Turtle Example";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
